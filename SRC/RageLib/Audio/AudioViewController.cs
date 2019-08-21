@@ -58,8 +58,8 @@ namespace RageLib.Audio
                 }
                 catch
                 {
-                    MessageBox.Show("Audio play error.",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("播放音频时发生错误。",
+                    "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -121,8 +121,8 @@ namespace RageLib.Audio
                 {
                     AddExtension = true,
                     OverwritePrompt = true,
-                    Title = "Export Selected WAV",
-                    Filter = "WAV Audio File (*.wav)|*.wav",
+                    Title = "保存已选择的 WAV",
+                    Filter = "WAV 音频文件 (*.wav)|*.wav",
                     InitialDirectory = _lastSaveDirectory,
                     FileName = wave + ".wav"
                 };
@@ -136,7 +136,7 @@ namespace RageLib.Audio
 
                     _lastSaveDirectory = new FileInfo(sfd.FileName).Directory.FullName;
 
-                    MessageBox.Show("Audio exported.", "Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("音频已导出。", "导出", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
 
@@ -148,8 +148,8 @@ namespace RageLib.Audio
             {
                 AddExtension = true,
                 OverwritePrompt = true,
-                Title = "Export Multichannel WAV",
-                Filter = "WAV Audio File (*.wav)|*.wav",
+                Title = "导出多通道 WAV",
+                Filter = "WAV 音频文件 (*.wav)|*.wav",
                 InitialDirectory = _lastSaveDirectory,
                 FileName = _file.Name + ".wav",
             };
@@ -163,7 +163,7 @@ namespace RageLib.Audio
 
                 _lastSaveDirectory = new FileInfo(sfd.FileName).Directory.FullName;
 
-                MessageBox.Show("Audio exported.", "Export", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("音频已导出", "导出", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -184,8 +184,8 @@ namespace RageLib.Audio
                     }
                     catch
                     {
-                        MessageBox.Show("Audio play error.",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("音频播放错误。",
+                        "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

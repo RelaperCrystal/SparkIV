@@ -75,11 +75,11 @@ namespace RageLib.Textures
             // tsContainer.ContentPanel
             // 
             this.tsContainer.ContentPanel.Controls.Add(this.textureView);
-            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(633, 440);
+            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(633, 403);
             this.tsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tsContainer.Location = new System.Drawing.Point(0, 0);
             this.tsContainer.Name = "tsContainer";
-            this.tsContainer.Size = new System.Drawing.Size(633, 487);
+            this.tsContainer.Size = new System.Drawing.Size(633, 450);
             this.tsContainer.TabIndex = 5;
             this.tsContainer.Text = "toolStripContainer1";
             // 
@@ -110,7 +110,7 @@ namespace RageLib.Textures
             this.textureView.Name = "textureView";
             this.textureView.PreviewImage = null;
             this.textureView.SelectedTexture = null;
-            this.textureView.Size = new System.Drawing.Size(633, 440);
+            this.textureView.Size = new System.Drawing.Size(633, 403);
             this.textureView.TabIndex = 0;
             // 
             // tsToolbar
@@ -132,16 +132,16 @@ namespace RageLib.Textures
             this.tsbExport.Image = ((System.Drawing.Image)(resources.GetObject("tsbExport.Image")));
             this.tsbExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExport.Name = "tsbExport";
-            this.tsbExport.Size = new System.Drawing.Size(102, 22);
-            this.tsbExport.Text = "Export Texture";
+            this.tsbExport.Size = new System.Drawing.Size(76, 22);
+            this.tsbExport.Text = "导出材质";
             // 
             // tsbImport
             // 
             this.tsbImport.Image = ((System.Drawing.Image)(resources.GetObject("tsbImport.Image")));
             this.tsbImport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbImport.Name = "tsbImport";
-            this.tsbImport.Size = new System.Drawing.Size(105, 22);
-            this.tsbImport.Text = "Import Texture";
+            this.tsbImport.Size = new System.Drawing.Size(76, 22);
+            this.tsbImport.Text = "导入材质";
             // 
             // tsbSaveClose
             // 
@@ -149,16 +149,16 @@ namespace RageLib.Textures
             this.tsbSaveClose.Image = ((System.Drawing.Image)(resources.GetObject("tsbSaveClose.Image")));
             this.tsbSaveClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveClose.Name = "tsbSaveClose";
-            this.tsbSaveClose.Size = new System.Drawing.Size(108, 22);
-            this.tsbSaveClose.Text = "Save And Close";
+            this.tsbSaveClose.Size = new System.Drawing.Size(88, 22);
+            this.tsbSaveClose.Text = "保存并关闭";
             // 
             // TextureEditView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tsContainer);
             this.Name = "TextureEditView";
-            this.Size = new System.Drawing.Size(633, 487);
+            this.Size = new System.Drawing.Size(633, 450);
             this.tsContainer.BottomToolStripPanel.ResumeLayout(false);
             this.tsContainer.BottomToolStripPanel.PerformLayout();
             this.tsContainer.ContentPanel.ResumeLayout(false);

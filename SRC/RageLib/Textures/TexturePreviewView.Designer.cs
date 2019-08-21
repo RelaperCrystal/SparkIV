@@ -74,11 +74,11 @@ namespace RageLib.Textures
             // tsContainer.ContentPanel
             // 
             this.tsContainer.ContentPanel.Controls.Add(this.textureView);
-            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(633, 440);
+            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(633, 403);
             this.tsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tsContainer.Location = new System.Drawing.Point(0, 0);
             this.tsContainer.Name = "tsContainer";
-            this.tsContainer.Size = new System.Drawing.Size(633, 487);
+            this.tsContainer.Size = new System.Drawing.Size(633, 450);
             this.tsContainer.TabIndex = 4;
             this.tsContainer.Text = "toolStripContainer1";
             // 
@@ -104,9 +104,12 @@ namespace RageLib.Textures
             // textureView
             // 
             this.textureView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textureView.InfoPanelEnabled = false;
             this.textureView.Location = new System.Drawing.Point(0, 0);
             this.textureView.Name = "textureView";
-            this.textureView.Size = new System.Drawing.Size(633, 440);
+            this.textureView.PreviewImage = null;
+            this.textureView.SelectedTexture = null;
+            this.textureView.Size = new System.Drawing.Size(633, 403);
             this.textureView.TabIndex = 0;
             // 
             // tsToolbar
@@ -127,24 +130,24 @@ namespace RageLib.Textures
             this.tsbSave.Image = ((System.Drawing.Image)(resources.GetObject("tsbSave.Image")));
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(93, 22);
-            this.tsbSave.Text = "Save Texture";
+            this.tsbSave.Size = new System.Drawing.Size(76, 22);
+            this.tsbSave.Text = "保存材质";
             // 
             // tsbSaveAll
             // 
             this.tsbSaveAll.Image = ((System.Drawing.Image)(resources.GetObject("tsbSaveAll.Image")));
             this.tsbSaveAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSaveAll.Name = "tsbSaveAll";
-            this.tsbSaveAll.Size = new System.Drawing.Size(115, 22);
-            this.tsbSaveAll.Text = "Save All Textures";
+            this.tsbSaveAll.Size = new System.Drawing.Size(100, 22);
+            this.tsbSaveAll.Text = "保存全部材质";
             // 
             // TexturePreviewView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tsContainer);
             this.Name = "TexturePreviewView";
-            this.Size = new System.Drawing.Size(633, 487);
+            this.Size = new System.Drawing.Size(633, 450);
             this.tsContainer.BottomToolStripPanel.ResumeLayout(false);
             this.tsContainer.BottomToolStripPanel.PerformLayout();
             this.tsContainer.ContentPanel.ResumeLayout(false);

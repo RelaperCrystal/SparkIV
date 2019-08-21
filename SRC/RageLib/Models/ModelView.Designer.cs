@@ -75,7 +75,7 @@ namespace RageLib.Models
             this._model3DViewHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this._model3DViewHost.Location = new System.Drawing.Point(0, 0);
             this._model3DViewHost.Name = "_model3DViewHost";
-            this._model3DViewHost.Size = new System.Drawing.Size(471, 435);
+            this._model3DViewHost.Size = new System.Drawing.Size(471, 400);
             this._model3DViewHost.TabIndex = 0;
             this._model3DViewHost.Child = this._model3DView;
             // 
@@ -85,11 +85,11 @@ namespace RageLib.Models
             // tsContainer.ContentPanel
             // 
             this.tsContainer.ContentPanel.Controls.Add(this.scSplit);
-            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(646, 435);
+            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(646, 400);
             this.tsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tsContainer.Location = new System.Drawing.Point(0, 0);
             this.tsContainer.Name = "tsContainer";
-            this.tsContainer.Size = new System.Drawing.Size(646, 460);
+            this.tsContainer.Size = new System.Drawing.Size(646, 425);
             this.tsContainer.TabIndex = 1;
             this.tsContainer.Text = "toolStripContainer1";
             // 
@@ -110,7 +110,7 @@ namespace RageLib.Models
             // scSplit.Panel2
             // 
             this.scSplit.Panel2.Controls.Add(this._model3DViewHost);
-            this.scSplit.Size = new System.Drawing.Size(646, 435);
+            this.scSplit.Size = new System.Drawing.Size(646, 400);
             this.scSplit.SplitterDistance = 171;
             this.scSplit.TabIndex = 0;
             // 
@@ -121,7 +121,7 @@ namespace RageLib.Models
             this.tvNav.HideSelection = false;
             this.tvNav.Location = new System.Drawing.Point(0, 0);
             this.tvNav.Name = "tvNav";
-            this.tvNav.Size = new System.Drawing.Size(171, 435);
+            this.tvNav.Size = new System.Drawing.Size(171, 400);
             this.tvNav.TabIndex = 0;
             this.tvNav.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.tvNav_AfterCheck);
             this.tvNav.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvNav_AfterSelect);
@@ -149,8 +149,8 @@ namespace RageLib.Models
             this.tsbSolid.Image = ((System.Drawing.Image)(resources.GetObject("tsbSolid.Image")));
             this.tsbSolid.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSolid.Name = "tsbSolid";
-            this.tsbSolid.Size = new System.Drawing.Size(53, 22);
-            this.tsbSolid.Text = "Solid";
+            this.tsbSolid.Size = new System.Drawing.Size(52, 22);
+            this.tsbSolid.Text = "固体";
             this.tsbSolid.CheckedChanged += new System.EventHandler(this.tsbSolid_CheckedChanged);
             // 
             // tsbWireframe
@@ -159,8 +159,8 @@ namespace RageLib.Models
             this.tsbWireframe.Image = ((System.Drawing.Image)(resources.GetObject("tsbWireframe.Image")));
             this.tsbWireframe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbWireframe.Name = "tsbWireframe";
-            this.tsbWireframe.Size = new System.Drawing.Size(82, 22);
-            this.tsbWireframe.Text = "Wireframe";
+            this.tsbWireframe.Size = new System.Drawing.Size(52, 22);
+            this.tsbWireframe.Text = "线框";
             this.tsbWireframe.Click += new System.EventHandler(this.tsbWireframe_Click);
             // 
             // tss1
@@ -173,16 +173,16 @@ namespace RageLib.Models
             this.tsbExport.Image = ((System.Drawing.Image)(resources.GetObject("tsbExport.Image")));
             this.tsbExport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExport.Name = "tsbExport";
-            this.tsbExport.Size = new System.Drawing.Size(60, 22);
-            this.tsbExport.Text = "Export";
+            this.tsbExport.Size = new System.Drawing.Size(52, 22);
+            this.tsbExport.Text = "导出";
             // 
             // ModelView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tsContainer);
             this.Name = "ModelView";
-            this.Size = new System.Drawing.Size(646, 460);
+            this.Size = new System.Drawing.Size(646, 425);
             this.tsContainer.ContentPanel.ResumeLayout(false);
             this.tsContainer.TopToolStripPanel.ResumeLayout(false);
             this.tsContainer.TopToolStripPanel.PerformLayout();

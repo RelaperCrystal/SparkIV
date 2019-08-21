@@ -66,8 +66,8 @@ namespace RageLib.Textures
                 {
                     AddExtension = true,
                     OverwritePrompt = true,
-                    Title = "Export Texture",
-                    Filter = "Portable Network Graphics (*.png)|*.png",
+                    Title = "导出材质",
+                    Filter = "可移植网络图像 (*.png)|*.png",
                     InitialDirectory = _workingDirectory,
                     FileName = texture.TitleName + ".png"
                 };
@@ -93,8 +93,8 @@ namespace RageLib.Textures
                 var ofd = new OpenFileDialog()
                 {
                     AddExtension = true,
-                    Title = "Import Texture",
-                    Filter = "Portable Network Graphics (*.png)|*.png",
+                    Title = "导入材质",
+                    Filter = "可移植网络图像 (*.png)|*.png",
                     InitialDirectory = _workingDirectory,
                     FileName = texture.TitleName + ".png"
                 };

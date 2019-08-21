@@ -84,7 +84,7 @@ namespace RageLib.Textures
             this.panelPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPreview.Location = new System.Drawing.Point(0, 0);
             this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(459, 431);
+            this.panelPreview.Size = new System.Drawing.Size(459, 398);
             this.panelPreview.TabIndex = 1;
             // 
             // picPreview
@@ -113,7 +113,7 @@ namespace RageLib.Textures
             // 
             this.splitContainer.Panel2.Controls.Add(this.panelPreview);
             this.splitContainer.Panel2.Controls.Add(this.panelInfo);
-            this.splitContainer.Size = new System.Drawing.Size(633, 487);
+            this.splitContainer.Size = new System.Drawing.Size(633, 450);
             this.splitContainer.SplitterDistance = 170;
             this.splitContainer.TabIndex = 2;
             // 
@@ -124,7 +124,7 @@ namespace RageLib.Textures
             this.listTextures.FormattingEnabled = true;
             this.listTextures.Location = new System.Drawing.Point(0, 0);
             this.listTextures.Name = "listTextures";
-            this.listTextures.Size = new System.Drawing.Size(170, 487);
+            this.listTextures.Size = new System.Drawing.Size(170, 450);
             this.listTextures.TabIndex = 0;
             this.listTextures.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listTextures_DrawItem);
             this.listTextures.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.listTextures_MeasureItem);
@@ -137,9 +137,9 @@ namespace RageLib.Textures
             this.panelInfo.Controls.Add(this.lblTextureName);
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelInfo.Enabled = false;
-            this.panelInfo.Location = new System.Drawing.Point(0, 431);
+            this.panelInfo.Location = new System.Drawing.Point(0, 398);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(459, 56);
+            this.panelInfo.Size = new System.Drawing.Size(459, 52);
             this.panelInfo.TabIndex = 2;
             // 
             // panelInfoControls
@@ -154,14 +154,14 @@ namespace RageLib.Textures
             this.panelInfoControls.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelInfoControls.Location = new System.Drawing.Point(309, 0);
             this.panelInfoControls.Name = "panelInfoControls";
-            this.panelInfoControls.Size = new System.Drawing.Size(150, 56);
+            this.panelInfoControls.Size = new System.Drawing.Size(150, 52);
             this.panelInfoControls.TabIndex = 4;
             // 
             // lblMipMap
             // 
             this.lblMipMap.AutoSize = true;
             this.lblMipMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMipMap.Location = new System.Drawing.Point(3, 33);
+            this.lblMipMap.Location = new System.Drawing.Point(3, 30);
             this.lblMipMap.Name = "lblMipMap";
             this.lblMipMap.Size = new System.Drawing.Size(48, 13);
             this.lblMipMap.TabIndex = 6;
@@ -171,9 +171,9 @@ namespace RageLib.Textures
             // 
             this.cboMipMaps.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMipMaps.FormattingEnabled = true;
-            this.cboMipMaps.Location = new System.Drawing.Point(57, 30);
+            this.cboMipMaps.Location = new System.Drawing.Point(57, 28);
             this.cboMipMaps.Name = "cboMipMaps";
-            this.cboMipMaps.Size = new System.Drawing.Size(89, 21);
+            this.cboMipMaps.Size = new System.Drawing.Size(89, 20);
             this.cboMipMaps.TabIndex = 5;
             // 
             // radioChannelA
@@ -182,7 +182,7 @@ namespace RageLib.Textures
             this.radioChannelA.AutoSize = true;
             this.radioChannelA.Location = new System.Drawing.Point(122, 3);
             this.radioChannelA.Name = "radioChannelA";
-            this.radioChannelA.Size = new System.Drawing.Size(24, 23);
+            this.radioChannelA.Size = new System.Drawing.Size(21, 22);
             this.radioChannelA.TabIndex = 4;
             this.radioChannelA.Text = "A";
             this.radioChannelA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -195,7 +195,7 @@ namespace RageLib.Textures
             this.radioChannelB.AutoSize = true;
             this.radioChannelB.Location = new System.Drawing.Point(96, 3);
             this.radioChannelB.Name = "radioChannelB";
-            this.radioChannelB.Size = new System.Drawing.Size(24, 23);
+            this.radioChannelB.Size = new System.Drawing.Size(21, 22);
             this.radioChannelB.TabIndex = 3;
             this.radioChannelB.Text = "B";
             this.radioChannelB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,7 +208,7 @@ namespace RageLib.Textures
             this.radioChannelG.AutoSize = true;
             this.radioChannelG.Location = new System.Drawing.Point(69, 3);
             this.radioChannelG.Name = "radioChannelG";
-            this.radioChannelG.Size = new System.Drawing.Size(25, 23);
+            this.radioChannelG.Size = new System.Drawing.Size(21, 22);
             this.radioChannelG.TabIndex = 2;
             this.radioChannelG.Text = "G";
             this.radioChannelG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,7 +221,7 @@ namespace RageLib.Textures
             this.radioChannelR.AutoSize = true;
             this.radioChannelR.Location = new System.Drawing.Point(42, 3);
             this.radioChannelR.Name = "radioChannelR";
-            this.radioChannelR.Size = new System.Drawing.Size(25, 23);
+            this.radioChannelR.Size = new System.Drawing.Size(21, 22);
             this.radioChannelR.TabIndex = 1;
             this.radioChannelR.Text = "R";
             this.radioChannelR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -235,10 +235,10 @@ namespace RageLib.Textures
             this.radioChannelFull.Checked = true;
             this.radioChannelFull.Location = new System.Drawing.Point(3, 3);
             this.radioChannelFull.Name = "radioChannelFull";
-            this.radioChannelFull.Size = new System.Drawing.Size(33, 23);
+            this.radioChannelFull.Size = new System.Drawing.Size(39, 22);
             this.radioChannelFull.TabIndex = 0;
             this.radioChannelFull.TabStop = true;
-            this.radioChannelFull.Text = "Full";
+            this.radioChannelFull.Text = "全部";
             this.radioChannelFull.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioChannelFull.UseVisualStyleBackColor = true;
             this.radioChannelFull.CheckedChanged += new System.EventHandler(this.view_ImageChannelChecked);
@@ -247,7 +247,7 @@ namespace RageLib.Textures
             // 
             this.lblTextureFormat.AutoSize = true;
             this.lblTextureFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextureFormat.Location = new System.Drawing.Point(4, 33);
+            this.lblTextureFormat.Location = new System.Drawing.Point(4, 30);
             this.lblTextureFormat.Name = "lblTextureFormat";
             this.lblTextureFormat.Size = new System.Drawing.Size(0, 13);
             this.lblTextureFormat.TabIndex = 2;
@@ -256,7 +256,7 @@ namespace RageLib.Textures
             // 
             this.lblTextureDims.AutoSize = true;
             this.lblTextureDims.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextureDims.Location = new System.Drawing.Point(4, 20);
+            this.lblTextureDims.Location = new System.Drawing.Point(4, 18);
             this.lblTextureDims.Name = "lblTextureDims";
             this.lblTextureDims.Size = new System.Drawing.Size(0, 13);
             this.lblTextureDims.TabIndex = 1;
@@ -265,18 +265,18 @@ namespace RageLib.Textures
             // 
             this.lblTextureName.AutoSize = true;
             this.lblTextureName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextureName.Location = new System.Drawing.Point(4, 7);
+            this.lblTextureName.Location = new System.Drawing.Point(4, 6);
             this.lblTextureName.Name = "lblTextureName";
             this.lblTextureName.Size = new System.Drawing.Size(0, 13);
             this.lblTextureName.TabIndex = 0;
             // 
             // TextureView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer);
             this.Name = "TextureView";
-            this.Size = new System.Drawing.Size(633, 487);
+            this.Size = new System.Drawing.Size(633, 450);
             this.panelPreview.ResumeLayout(false);
             this.panelPreview.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).EndInit();

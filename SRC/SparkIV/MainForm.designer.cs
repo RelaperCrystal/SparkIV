@@ -101,11 +101,11 @@ namespace SparkIV
             // tsContainer.ContentPanel
             // 
             this.tsContainer.ContentPanel.Controls.Add(this.splitContainer);
-            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(716, 438);
+            this.tsContainer.ContentPanel.Size = new System.Drawing.Size(716, 396);
             this.tsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tsContainer.Location = new System.Drawing.Point(0, 0);
             this.tsContainer.Name = "tsContainer";
-            this.tsContainer.Size = new System.Drawing.Size(716, 463);
+            this.tsContainer.Size = new System.Drawing.Size(716, 421);
             this.tsContainer.TabIndex = 1;
             this.tsContainer.Text = "toolStripContainer1";
             // 
@@ -123,7 +123,7 @@ namespace SparkIV
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.lvFiles);
-            this.splitContainer.Size = new System.Drawing.Size(716, 438);
+            this.splitContainer.Size = new System.Drawing.Size(716, 396);
             this.splitContainer.SplitterDistance = 192;
             this.splitContainer.TabIndex = 2;
             // 
@@ -139,7 +139,7 @@ namespace SparkIV
             this.lvFiles.HideSelection = false;
             this.lvFiles.Location = new System.Drawing.Point(0, 0);
             this.lvFiles.Name = "lvFiles";
-            this.lvFiles.Size = new System.Drawing.Size(716, 438);
+            this.lvFiles.Size = new System.Drawing.Size(716, 396);
             this.lvFiles.TabIndex = 1;
             this.lvFiles.UseCompatibleStateImageBehavior = false;
             this.lvFiles.View = System.Windows.Forms.View.Details;
@@ -150,17 +150,17 @@ namespace SparkIV
             // 
             // lvcName
             // 
-            this.lvcName.Text = "Name";
+            this.lvcName.Text = "名称";
             this.lvcName.Width = 280;
             // 
             // lvcSize
             // 
-            this.lvcSize.Text = "Size";
+            this.lvcSize.Text = "大小";
             this.lvcSize.Width = 80;
             // 
             // lvcResource
             // 
-            this.lvcResource.Text = "Resource";
+            this.lvcResource.Text = "是否为资源";
             this.lvcResource.Width = 100;
             // 
             // toolStripContainer1
@@ -170,11 +170,11 @@ namespace SparkIV
             // 
             this.toolStripContainer1.ContentPanel.AutoScroll = true;
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tsContainer);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(716, 463);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(716, 421);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(716, 517);
+            this.toolStripContainer1.Size = new System.Drawing.Size(716, 477);
             this.toolStripContainer1.TabIndex = 2;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -206,7 +206,7 @@ namespace SparkIV
             this.tsToolbar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.tsToolbar.Location = new System.Drawing.Point(0, 0);
             this.tsToolbar.Name = "tsToolbar";
-            this.tsToolbar.Size = new System.Drawing.Size(716, 54);
+            this.tsToolbar.Size = new System.Drawing.Size(716, 56);
             this.tsToolbar.Stretch = true;
             this.tsToolbar.TabIndex = 0;
             // 
@@ -216,7 +216,7 @@ namespace SparkIV
             this.toolStripGTAIV.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripGTAIV.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripGTAIV.Name = "toolStripGTAIV";
-            this.toolStripGTAIV.Size = new System.Drawing.Size(43, 51);
+            this.toolStripGTAIV.Size = new System.Drawing.Size(48, 53);
             this.toolStripGTAIV.Text = "&GTAIV";
             this.toolStripGTAIV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripGTAIV.Click += new System.EventHandler(this.toolStripGTAIV_Click);
@@ -227,7 +227,7 @@ namespace SparkIV
             this.toolStripEFLC.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripEFLC.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripEFLC.Name = "toolStripEFLC";
-            this.toolStripEFLC.Size = new System.Drawing.Size(39, 51);
+            this.toolStripEFLC.Size = new System.Drawing.Size(39, 53);
             this.toolStripEFLC.Text = "E&FLC";
             this.toolStripEFLC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripEFLC.Click += new System.EventHandler(this.toolStripEFLC_Click);
@@ -238,8 +238,8 @@ namespace SparkIV
             this.tsbOpen.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOpen.Name = "tsbOpen";
-            this.tsbOpen.Size = new System.Drawing.Size(40, 51);
-            this.tsbOpen.Text = "&Open";
+            this.tsbOpen.Size = new System.Drawing.Size(54, 53);
+            this.tsbOpen.Text = "打开(&O)";
             this.tsbOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbOpen.Click += new System.EventHandler(this.tsbOpen_Click);
             // 
@@ -249,8 +249,8 @@ namespace SparkIV
             this.tsbSave.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSave.Name = "tsbSave";
-            this.tsbSave.Size = new System.Drawing.Size(36, 51);
-            this.tsbSave.Text = "&Save";
+            this.tsbSave.Size = new System.Drawing.Size(51, 53);
+            this.tsbSave.Text = "保存(&S)";
             this.tsbSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
@@ -260,15 +260,15 @@ namespace SparkIV
             this.tsbRebuild.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbRebuild.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRebuild.Name = "tsbRebuild";
-            this.tsbRebuild.Size = new System.Drawing.Size(51, 51);
-            this.tsbRebuild.Text = "&Rebuild";
+            this.tsbRebuild.Size = new System.Drawing.Size(52, 53);
+            this.tsbRebuild.Text = "重建(&R)";
             this.tsbRebuild.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbRebuild.Click += new System.EventHandler(this.tsbRebuild_Click);
             // 
             // tss1
             // 
             this.tss1.Name = "tss1";
-            this.tss1.Size = new System.Drawing.Size(6, 54);
+            this.tss1.Size = new System.Drawing.Size(6, 56);
             // 
             // tsbExportSelected
             // 
@@ -276,8 +276,8 @@ namespace SparkIV
             this.tsbExportSelected.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbExportSelected.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportSelected.Name = "tsbExportSelected";
-            this.tsbExportSelected.Size = new System.Drawing.Size(44, 51);
-            this.tsbExportSelected.Text = "&Export";
+            this.tsbExportSelected.Size = new System.Drawing.Size(51, 53);
+            this.tsbExportSelected.Text = "导出(&E)";
             this.tsbExportSelected.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbExportSelected.Click += new System.EventHandler(this.tsbExportSelected_Click);
             // 
@@ -287,8 +287,8 @@ namespace SparkIV
             this.tsbExportAll.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbExportAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbExportAll.Name = "tsbExportAll";
-            this.tsbExportAll.Size = new System.Drawing.Size(61, 51);
-            this.tsbExportAll.Text = "Export &All";
+            this.tsbExportAll.Size = new System.Drawing.Size(76, 53);
+            this.tsbExportAll.Text = "全部导出(&A)";
             this.tsbExportAll.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbExportAll.Click += new System.EventHandler(this.tsbExportAll_Click);
             // 
@@ -298,8 +298,8 @@ namespace SparkIV
             this.tsbImport.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbImport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbImport.Name = "tsbImport";
-            this.tsbImport.Size = new System.Drawing.Size(47, 51);
-            this.tsbImport.Text = "&Import";
+            this.tsbImport.Size = new System.Drawing.Size(48, 53);
+            this.tsbImport.Text = "导入(&I)";
             this.tsbImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbImport.Click += new System.EventHandler(this.tsbImport_Click);
             // 
@@ -309,7 +309,7 @@ namespace SparkIV
             this.tslAbout.BackColor = System.Drawing.SystemColors.Control;
             this.tslAbout.ForeColor = System.Drawing.Color.SlateGray;
             this.tslAbout.Name = "tslAbout";
-            this.tslAbout.Size = new System.Drawing.Size(49, 51);
+            this.tslAbout.Size = new System.Drawing.Size(58, 53);
             this.tslAbout.Text = "Spark IV";
             this.tslAbout.ToolTipText = "Click to check for new updates.";
             this.tslAbout.Click += new System.EventHandler(this.tslAbout_Click);
@@ -317,7 +317,7 @@ namespace SparkIV
             // tss2
             // 
             this.tss2.Name = "tss2";
-            this.tss2.Size = new System.Drawing.Size(6, 54);
+            this.tss2.Size = new System.Drawing.Size(6, 56);
             // 
             // tsbPreview
             // 
@@ -325,8 +325,8 @@ namespace SparkIV
             this.tsbPreview.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbPreview.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPreview.Name = "tsbPreview";
-            this.tsbPreview.Size = new System.Drawing.Size(36, 51);
-            this.tsbPreview.Text = "&View";
+            this.tsbPreview.Size = new System.Drawing.Size(52, 53);
+            this.tsbPreview.Text = "查看(&V)";
             this.tsbPreview.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbPreview.Click += new System.EventHandler(this.tsbPreview_Click);
             // 
@@ -336,21 +336,21 @@ namespace SparkIV
             this.tsbEdit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEdit.Name = "tsbEdit";
-            this.tsbEdit.Size = new System.Drawing.Size(36, 51);
-            this.tsbEdit.Text = "&Edit";
+            this.tsbEdit.Size = new System.Drawing.Size(51, 53);
+            this.tsbEdit.Text = "编辑(&E)";
             this.tsbEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbEdit.Click += new System.EventHandler(this.tsbEdit_Click);
             // 
             // tslFilter
             // 
             this.tslFilter.Name = "tslFilter";
-            this.tslFilter.Size = new System.Drawing.Size(36, 51);
+            this.tslFilter.Size = new System.Drawing.Size(39, 53);
             this.tslFilter.Text = "Fil&ter:";
             // 
             // tstFilterBox
             // 
             this.tstFilterBox.Name = "tstFilterBox";
-            this.tstFilterBox.Size = new System.Drawing.Size(100, 54);
+            this.tstFilterBox.Size = new System.Drawing.Size(100, 56);
             this.tstFilterBox.ToolTipText = "Type all or part of a file name.\r\nSearch is case-sensitive.";
             this.tstFilterBox.Click += new System.EventHandler(this.tstFilterBox_Click);
             this.tstFilterBox.TextChanged += new System.EventHandler(this.tstFilterBox_TextChanged);
@@ -358,9 +358,9 @@ namespace SparkIV
             // MainForm
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 517);
+            this.ClientSize = new System.Drawing.Size(716, 477);
             this.Controls.Add(this.toolStripContainer1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

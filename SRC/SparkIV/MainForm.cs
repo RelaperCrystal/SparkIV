@@ -111,8 +111,8 @@ namespace SparkIV
                     if ((fi.Attributes & FileAttributes.ReadOnly) != 0)
                     {
                         DialogResult result =
-                            MessageBox.Show("The file you are trying to open appears to be read-only. " +
-                                "Would you like to make it writable before opening this file?",
+                            MessageBox.Show("你试图打开的文件是只读的。" +
+                                "是否取消该文件的只读再打开？",
                                 "Open", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                         if (result == DialogResult.Yes)
@@ -207,7 +207,7 @@ namespace SparkIV
                             lvi.SubItems.Add(compressed);
                              */
 
-                            string resources = file.IsResource ? "Yes" : "No";
+                            string resources = file.IsResource ? "是" : "否";
                             if (file.IsResource)
                             {
                                 string rscType = Enum.IsDefined(file.ResourceType.GetType(), file.ResourceType)
@@ -402,7 +402,7 @@ namespace SparkIV
                     var fbd = new VistaFolderBrowserDialog
                     {
                         Description =
-                            "Could not find the " + gameName + " game directory. Please select the directory containing " + keyUtil.ExecutableName,
+                            "无法找到 " + gameName + " 的游戏目录。请选择包含 " + keyUtil.ExecutableName + " 的文件夹。",
                         ShowNewFolderButton = false
                     };
 
@@ -410,8 +410,8 @@ namespace SparkIV
                     {
                         MessageBox.Show(
                             keyUtil.ExecutableName +
-                            " is required to extract cryptographic keys for this program to function. " +
-                            "SparkIV can not run without this file.", "Error", MessageBoxButtons.OK,
+                            " 必须存在以从中提取密钥。 " +
+                            "SparkIV 没有了这个文件将无法运作。", "Error", MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
                         return;
                     }
@@ -425,9 +425,9 @@ namespace SparkIV
 
                 if (key == null)
                 {
-                    string message = "Your " + keyUtil.ExecutableName + " seems to be modified or is a newer version than this tool supports. " +
-                                    "SparkIV can not run without a supported " + keyUtil.ExecutableName + " file." + "\n" + "Would you like to check for updates?";
-                    string caption = "Newer or Modified " + keyUtil.ExecutableName;
+                    string message = "你的 " + keyUtil.ExecutableName + " 可能被修改，或者版本高于本工具支持的版本。 " +
+                                    "SparkIV 不能在没有 " + keyUtil.ExecutableName + " 的情况下运行。" + "\n" + "是否检查更新？";
+                    string caption = keyUtil.ExecutableName + "被修改或高于支持版本";
 
                     if (MessageBox.Show(message, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
                     {
@@ -471,8 +471,8 @@ namespace SparkIV
         private void tsbOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Open IV Archive";
-            ofd.Filter = "All Supported IV Archives|*.rpf;*.img|RPF Files (*.rpf)|*.rpf|IMG Files (*.img)|*.img";
+            ofd.Title = "打开 GTAIV 资源映像";
+            ofd.Filter = "所有支持的类型|*.rpf;*.img|RPF 文件 (*.rpf)|*.rpf|IMG 文件 (*.img)|*.img";
             ofd.FileName = _lastOpenPath;
 
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -501,7 +501,7 @@ namespace SparkIV
                     }
                     else
                     {
-                        MessageBox.Show("Please select a type for the file you are trying to open.", "Open IV Archive", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("请选择你正在打开的文件的类型。", "打开 GTAIV 资源映像", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
 
@@ -523,12 +523,12 @@ namespace SparkIV
 
                 PopulateListView();
 
-                MessageBox.Show("The archive has been saved.", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("资源归档已被保存。", "保存", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
-                MessageBox.Show("Could not save the archive.",
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("无法保存资源归档。",
+                                "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -541,7 +541,7 @@ namespace SparkIV
                 File file = lvFiles.SelectedItems[0].Tag as File;
 
                 SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Title = "Export...";
+                sfd.Title = "导出...";
 
                 if (_lastImportExportPath != null)
                 {
@@ -570,7 +570,7 @@ namespace SparkIV
             else if (lvFiles.SelectedItems.Count > 1)
             {
                 FolderBrowserDialog fbd = new FolderBrowserDialog();
-                fbd.Description = "Export Selected...";
+                fbd.Description = "导出已选择...";
                 fbd.ShowNewFolderButton = true;
                 fbd.SelectedPath = _lastImportExportPath;
 
@@ -590,7 +590,7 @@ namespace SparkIV
                         }
                     }
 
-                    MessageBox.Show("All selected files exported.", "Export Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("所有选择的文件已被保存。", "导出已选择", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -600,7 +600,7 @@ namespace SparkIV
             if (_fs == null) return;
 
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Export All...";
+            fbd.Description = "导出所有...";
             fbd.ShowNewFolderButton = true;
             fbd.SelectedPath = _lastImportExportPath;
 
@@ -616,7 +616,7 @@ namespace SparkIV
                     ExtractToPath(_fs.RootDirectory, path);
                 }
 
-                MessageBox.Show("All files in archive exported.", "Export All", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("所有在这个映像中的文件已经全部导出。", "Export All", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -625,7 +625,7 @@ namespace SparkIV
             if (_fs == null) return;
 
             var ofd = new OpenFileDialog();
-            ofd.Title = "Import...";
+            ofd.Title = "导入...";
 
             if (_lastImportExportPath != null)
             {
@@ -666,9 +666,8 @@ namespace SparkIV
                     {
                         sb.Append("  " + s + "\n");
                     }
-                    MessageBox.Show("The following files were not found in the archive to be replaced:\n\n" + sb +
-                                    "\nPlease note that you can not add new files, only replace existing ones. The files must be named exactly " +
-                                    "as they are in the archive.", "Import", MessageBoxButtons.OK,
+                    MessageBox.Show("以下文件没有在映像中找到替换件：\n\n" + sb +
+                                    "\n您不能导入新文件，只能替换旧文件。这些文件必须与其在映像内要替换的文件名一模一样。", "Import", MessageBoxButtons.OK,
                                     MessageBoxIcon.Exclamation);
                 }
 
@@ -689,13 +688,13 @@ namespace SparkIV
 
                 PopulateListView();
 
-                MessageBox.Show("The archive has been rebuilt.", "Rebuild", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("映像已被重建。", "重建", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {
-                MessageBox.Show("Could not rebuild the archive.\n\n" +
-                                "Note that only IMG files can be rebuilt at the moment, rebuilding RPF files is not currently supported.",
-                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("无法重建映像。\n\n" +
+                                "当前只有 IMG 映像能被重建，重建 RPF 映像在当前是不支持的。",
+                                "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

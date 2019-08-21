@@ -31,3 +31,33 @@ F:\برامج pc\gtaivtools\trunk\SparkIV\bin\Debug\RageLib.Scripting.pdb
 F:\برامج pc\gtaivtools\trunk\SparkIV\bin\Debug\RageLib.Textures.pdb
 F:\برامج pc\gtaivtools\trunk\SparkIV\obj\Debug\SparkIV.csproj.CopyComplete
 F:\برامج pc\gtaivtools\trunk\SparkIV\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\SparkIV.exe.config
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.exe
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\ragezip.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\libsquish.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\SparkIV.Config.xml
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\SparkIV.exe
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\SparkIV.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Audio.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.FileSystem.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.HyperText.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Models.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Scripting.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Textures.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Audio.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Common.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.FileSystem.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.HyperText.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Models.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Scripting.pdb
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\RageLib.Textures.pdb
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.csprojResolveAssemblyReference.cache
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.MainForm.resources
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Viewer.ViewerForm.resources
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Editor.EditorForm.resources
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Properties.Resources.resources
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Viewer.Script.ScriptView.resources
+E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.csproj.GenerateResource.Cache

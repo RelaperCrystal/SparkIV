@@ -8,3 +8,10 @@ F:\برامج pc\gtaivtools\trunk\RageLib\Common\obj\Debug\Common.csprojAssembly
 F:\برامج pc\gtaivtools\trunk\RageLib\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 F:\برامج pc\gtaivtools\trunk\RageLib\Common\obj\Debug\Common.csproj.CopyComplete
 F:\برامج pc\gtaivtools\trunk\RageLib\Common\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Common\bin\Debug\ragezip.dll
+E:\Projects\SparkIV\SRC\RageLib\Common\bin\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\RageLib\Common\bin\Debug\RageLib.Common.pdb
+E:\Projects\SparkIV\SRC\RageLib\Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SparkIV\SRC\RageLib\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Projects\SparkIV\SRC\RageLib\Common\obj\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\RageLib\Common\obj\Debug\RageLib.Common.pdb

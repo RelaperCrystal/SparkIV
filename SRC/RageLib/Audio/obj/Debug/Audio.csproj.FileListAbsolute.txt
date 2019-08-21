@@ -13,3 +13,16 @@ F:\برامج pc\gtaivtools\trunk\RageLib\Audio\obj\Debug\Audio.csprojAssemblyRe
 F:\برامج pc\gtaivtools\trunk\RageLib\Audio\obj\Debug\Audio.csproj.CoreCompileInputs.cache
 F:\برامج pc\gtaivtools\trunk\RageLib\Audio\obj\Debug\Audio.csproj.CopyComplete
 F:\برامج pc\gtaivtools\trunk\RageLib\Audio\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\ragezip.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\RageLib.Audio.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\RageLib.Audio.pdb
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\bin\Debug\RageLib.Common.pdb
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\Audio.csprojResolveAssemblyReference.cache
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\RageLib.Audio.AudioView.resources
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\RageLib.Audio.Properties.Resources.resources
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\Audio.csproj.GenerateResource.Cache
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\RageLib.Audio.dll
+E:\Projects\SparkIV\SRC\RageLib\Audio\obj\Debug\RageLib.Audio.pdb

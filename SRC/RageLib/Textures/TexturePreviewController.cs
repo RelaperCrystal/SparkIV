@@ -60,8 +60,8 @@ namespace RageLib.Textures
                 {
                     AddExtension = true,
                     OverwritePrompt = true,
-                    Title = "Save Texture",
-                    Filter = "Portable Network Graphics (*.png)|*.png|JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg",
+                    Title = "保存材质",
+                    Filter = "可移植网络图像 (*.png)|*.png|JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg",
                     InitialDirectory = _lastSaveDirectory,
                     FileName = texture.TitleName + ".png"
                 };
@@ -80,7 +80,7 @@ namespace RageLib.Textures
 
                     _lastSaveDirectory = new FileInfo(sfd.FileName).Directory.FullName;
 
-                    MessageBox.Show("Texture saved.", "Save Texture", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("保存完成。", "保存材质", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace RageLib.Textures
         {
             var fbd = new FolderBrowserDialog
             {
-                Description = "Select path to save textures to...",
+                Description = "选择保存所有材质的路径...",
                 SelectedPath = _lastSaveDirectory,
                 ShowNewFolderButton = true
             };
@@ -102,7 +102,7 @@ namespace RageLib.Textures
                     image.Save(Path.Combine(fbd.SelectedPath, texture.TitleName + ".png"), ImageFormat.Png);
                 }
 
-                MessageBox.Show("Textures saved.", "Save All Textures", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("材质已保存。", "保存所有材质", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

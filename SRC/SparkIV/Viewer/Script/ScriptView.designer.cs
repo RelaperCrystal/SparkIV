@@ -41,7 +41,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(443, 30);
+            this.panel1.Size = new System.Drawing.Size(443, 28);
             this.panel1.TabIndex = 0;
             // 
             // radioFullDecompile
@@ -51,10 +51,10 @@
             this.radioFullDecompile.Checked = true;
             this.radioFullDecompile.Location = new System.Drawing.Point(3, 4);
             this.radioFullDecompile.Name = "radioFullDecompile";
-            this.radioFullDecompile.Size = new System.Drawing.Size(127, 23);
+            this.radioFullDecompile.Size = new System.Drawing.Size(111, 22);
             this.radioFullDecompile.TabIndex = 0;
             this.radioFullDecompile.TabStop = true;
-            this.radioFullDecompile.Text = "High Level Decompiled";
+            this.radioFullDecompile.Text = "反编译为高级语言";
             this.radioFullDecompile.UseVisualStyleBackColor = true;
             this.radioFullDecompile.CheckedChanged += new System.EventHandler(this.radioFullDecompile_CheckedChanged);
             // 
@@ -62,21 +62,21 @@
             // 
             this.radioCFDecompile.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioCFDecompile.AutoSize = true;
-            this.radioCFDecompile.Location = new System.Drawing.Point(136, 4);
+            this.radioCFDecompile.Location = new System.Drawing.Point(120, 4);
             this.radioCFDecompile.Name = "radioCFDecompile";
-            this.radioCFDecompile.Size = new System.Drawing.Size(113, 23);
+            this.radioCFDecompile.Size = new System.Drawing.Size(111, 22);
             this.radioCFDecompile.TabIndex = 1;
-            this.radioCFDecompile.Text = "Scruff Disassembled";
+            this.radioCFDecompile.Text = "反编译为汇编语言";
             this.radioCFDecompile.UseVisualStyleBackColor = true;
             this.radioCFDecompile.CheckedChanged += new System.EventHandler(this.radioCFDecompile_CheckedChanged);
             // 
             // ScriptView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "ScriptView";
-            this.Size = new System.Drawing.Size(443, 431);
+            this.Size = new System.Drawing.Size(443, 398);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

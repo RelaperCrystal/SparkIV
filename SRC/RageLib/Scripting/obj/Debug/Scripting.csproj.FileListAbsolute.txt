@@ -10,3 +10,13 @@ F:\برامج pc\gtaivtools\trunk\RageLib\Scripting\obj\Debug\Scripting.csprojAs
 F:\برامج pc\gtaivtools\trunk\RageLib\Scripting\obj\Debug\Scripting.csproj.CoreCompileInputs.cache
 F:\برامج pc\gtaivtools\trunk\RageLib\Scripting\obj\Debug\Scripting.csproj.CopyComplete
 F:\برامج pc\gtaivtools\trunk\RageLib\Scripting\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\ragezip.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\RageLib.Scripting.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\RageLib.Scripting.pdb
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\bin\Debug\RageLib.Common.pdb
+E:\Projects\SparkIV\SRC\RageLib\Scripting\obj\Debug\Scripting.csprojResolveAssemblyReference.cache
+E:\Projects\SparkIV\SRC\RageLib\Scripting\obj\Debug\RageLib.Scripting.dll
+E:\Projects\SparkIV\SRC\RageLib\Scripting\obj\Debug\RageLib.Scripting.pdb

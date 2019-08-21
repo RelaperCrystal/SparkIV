@@ -15,3 +15,18 @@ F:\برامج pc\gtaivtools\trunk\RageLib\Textures\obj\Debug\Textures.csprojAsse
 F:\برامج pc\gtaivtools\trunk\RageLib\Textures\obj\Debug\Textures.csproj.CoreCompileInputs.cache
 F:\برامج pc\gtaivtools\trunk\RageLib\Textures\obj\Debug\Textures.csproj.CopyComplete
 F:\برامج pc\gtaivtools\trunk\RageLib\Textures\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\ragezip.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\libsquish.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\RageLib.Textures.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\RageLib.Textures.pdb
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\RageLib.Common.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\Ookii.Dialogs.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\bin\Debug\RageLib.Common.pdb
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\Textures.csprojResolveAssemblyReference.cache
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\RageLib.Textures.TextureEditView.resources
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\RageLib.Textures.TexturePreviewView.resources
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\RageLib.Textures.TextureView.resources
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\Textures.csproj.GenerateResource.Cache
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\RageLib.Textures.dll
+E:\Projects\SparkIV\SRC\RageLib\Textures\obj\Debug\RageLib.Textures.pdb

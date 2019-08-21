@@ -63,5 +63,6 @@ namespace RageLib.Textures
             add { tsbSaveClose.Click += value; }
             remove { tsbSaveClose.Click -= value; }
         }
+
     }
 }
