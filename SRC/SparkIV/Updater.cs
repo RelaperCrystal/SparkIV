@@ -22,19 +22,21 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace SparkIV
 {
     public class Updater
     {
-        private const string VersionUrl = "https://pastebin.com/raw/M6nhwaBw";
+        private const string VersionUrl = "https://raw.githubusercontent.com/RelaperCrystal/SparkIV/master/zhcnonline/CurrentTranslation.json";
         private const string UpdateUrl = "https://pastebin.com/raw/R3wJ0GQ7";
         private const string DownloadListUrl = "https://github.com/ahmed605/SparkIV/releases";
 
         public static void CheckForUpdate()
         {
             string version = GetWebString(VersionUrl);
-
+            Update upd;
+            
             if ( string.IsNullOrEmpty(version))
             {
                 DialogResult result =
@@ -49,55 +51,36 @@ namespace SparkIV
             }
             else
             {
-                var versionSplit = version.Split(new[] {'.'}, 3);
-                int versionCode = 0;
-                foreach (var s in versionSplit)
+                try
                 {
-                    versionCode *= 0x100;
-                    versionCode += int.Parse(s);
-                }
-
-                Version vrs = Assembly.GetExecutingAssembly().GetName().Version;
-                int assemblyVersionCode = (vrs.Major * 0x100 + vrs.Minor) * 0x100 + vrs.Build;
-                
-                if (versionCode > assemblyVersionCode)
-                {
-                    string message =
-                        "有新的 SparkIV 可以使用！要升级新版吗？注意您会丢失当前的汉化。" +
-                        "\n" + "\n" + "当前版本为:  " + vrs.Major + "." + vrs.Minor + "." + vrs.Build + "\n"
-                        + "新版本为: " + version;
-
-                    DialogResult result = MessageBox.Show(message, "有更新!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-                    if (result == DialogResult.Yes)
+                    upd = JsonConvert.DeserializeObject<Update>(version);
+                    var client = new System.Net.WebClient();
+                    if (string.IsNullOrEmpty(upd.downloadUrl))
                     {
-                        var url = GetWebString(UpdateUrl);
-
-                        if ( string.IsNullOrEmpty(url) )
-                        {
-                            result =
-                                MessageBox.Show(
-                                    "发生错误。请手动到 Github 页面的 Releases 进行更新。",
-                                    "错误", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-
-                            if (result == DialogResult.Yes)
-                            {
-                                Process.Start(DownloadListUrl);
-                            }
-                        }
-                        else
-                        {
-                            Process.Start( url );
-                            Application.Exit();                            
-                        }
+                        MessageBox.Show("发生错误。");
+                        return;
                     }
+
+                    if (upd.id != "v2.1")
+                    {
+                        
+                        client.DownloadFile(upd.downloadUrl, "updsetup.exe");
+                        MessageBox.Show("找到更新。下载以完成。");
+                        Process.Start("updsetup.exe");
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        MessageBox.Show("当前无汉化更新。");
+                    }
+                    
                 }
-                else
+                catch
                 {
-                    MessageBox.Show(String.Format("当前没有更新。"),
-                                    "无更新可用", MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
+                    MessageBox.Show("发生错误。");
+                    return;
                 }
+                
             }
         }
 

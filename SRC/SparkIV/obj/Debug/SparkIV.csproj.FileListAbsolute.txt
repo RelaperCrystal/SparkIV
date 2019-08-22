@@ -61,3 +61,4 @@ E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Editor.EditorForm.resources
 E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Properties.Resources.resources
 E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.Viewer.Script.ScriptView.resources
 E:\Projects\SparkIV\SRC\SparkIV\obj\Debug\SparkIV.csproj.GenerateResource.Cache
+E:\Projects\SparkIV\SRC\SparkIV\bin\Debug\Newtonsoft.Json.dll
