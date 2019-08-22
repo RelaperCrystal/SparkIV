@@ -1,5 +1,5 @@
 # SparkIV 翻译库
-> SparkIV BY Ahmed605 &amp; aru [![Build status](https://ci.appveyor.com/api/projects/status/imsh1gv0tdk8k7n9/branch/master?svg=true)](https://ci.appveyor.com/project/ahmed605/sparkiv/branch/master)
+> SparkIV BY Ahmed605 &amp; aru   英文原版构建： [![Build status](https://ci.appveyor.com/api/projects/status/imsh1gv0tdk8k7n9/branch/master?svg=true)](https://ci.appveyor.com/project/ahmed605/sparkiv/branch/master)
 
 这里是 RelaperCrystal 的 SparkIV 翻译存储库，目标是将整个程序的页面语言翻译为简体中文。
 
@@ -11,40 +11,35 @@
 
 ## 更改
 
-### v0.3.1 Beta
+### v0.8.1 Beta
 
 * 添加部分拖放功能。
-
 * 新的更新系统。
-
 * 修复了对于 **GTA IV** ***1.0.8.0*** & **EFLC** ***1.1.3.0*** 的打开错误。
+* 新的列表系统。
+* 添加了在 ***注册表*** 中的路径不存在时显示打开 `GTAIV.exe` 或 `EFLC.exe` 的打开文件对话框。
+* 添加了使用 (***Delete 键***) 删除文件的能力。
+
+### v0.8.0 Beta
+
+* 新的图标
+
+* 初步支持 GTA IV 1.0.8.0 & GTA EFLC 1.1.3.0
 
 * 新的列表系统。
 
-* 添加了一个在 ***注册表*** 中的路径不存在时显示的对话框。
+* 支持 Windows 10。 
 
-* 添加了使用 (***Delete 键***) 删除文件的能力。
+* 新的页面风格。
 
-### What's New In V0.8.0 Beta
+* 添加了对 GTA IV + GTA EFLC 三合一的支持系统。
 
-* New Icons
+* 修复了一些问题。
 
-* Support GTA IV 1.0.8.0 & GTA EFLC 1.1.3.0
+* 添加了 Darg Future but (未完成)
 
-* New Listing System
+* 新的上传系统
 
-* Windows 10 Support 
-
-* New Style
-
-* GTA IV & EFLC In One Version (IOV) New System
-
-* Fixed Some Bugs
-
-* Added Darg Future but (WIP)
-
-* New Uploading System
-
-* Fix Check For Updates Not Working
+* 修复检查更新无法工作
 
 ![](https://img.gta5-mods.com/q75/images/gta-iv-loading-tune/1cf10b-Grand-Theft-Auto-IV-Logo.svg.png)
