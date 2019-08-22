@@ -34,7 +34,7 @@ namespace RageLib.Textures
         {
             set
             {
-                tslTexturesInfo.Text = value + " Texture" + (value == 1 ? "" : "s");
+                tslTexturesInfo.Text = "找到 " + value + " 个材质";
             }
         }
 

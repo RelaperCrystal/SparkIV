@@ -39,8 +39,8 @@ namespace SparkIV
             {
                 DialogResult result =
                     MessageBox.Show(
-                        "An error has occurred. Please manually check the Github releases page for updates.",
-                        "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                        "发生错误。请手动到 Github 页面的 Releases 进行更新。",
+                        "错误", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
 
                 if (result == DialogResult.Yes)
                 {
@@ -63,11 +63,11 @@ namespace SparkIV
                 if (versionCode > assemblyVersionCode)
                 {
                     string message =
-                        "There is a new version of SparkIV available! Would you like to download the newest version?" +
-                        "\n" + "\n" + "This version is:  " + vrs.Major + "." + vrs.Minor + "." + vrs.Build + "\n"
-                        + "New Version is: " + version;
+                        "有新的 SparkIV 可以使用！要升级新版吗？注意您会丢失当前的汉化。" +
+                        "\n" + "\n" + "当前版本为:  " + vrs.Major + "." + vrs.Minor + "." + vrs.Build + "\n"
+                        + "新版本为: " + version;
 
-                    DialogResult result = MessageBox.Show(message, "New Update!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show(message, "有更新!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                     if (result == DialogResult.Yes)
                     {
@@ -77,8 +77,8 @@ namespace SparkIV
                         {
                             result =
                                 MessageBox.Show(
-                                    "An error has occurred. Please manually check the Github releases page for updates?",
-                                    "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                                    "发生错误。请手动到 Github 页面的 Releases 进行更新。",
+                                    "错误", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
 
                             if (result == DialogResult.Yes)
                             {
@@ -94,8 +94,8 @@ namespace SparkIV
                 }
                 else
                 {
-                    MessageBox.Show(String.Format("There is no update available at this time."),
-                                    "No update available", MessageBoxButtons.OK,
+                    MessageBox.Show(String.Format("当前没有更新。"),
+                                    "无更新可用", MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
                 }
             }
@@ -118,15 +118,15 @@ namespace SparkIV
                 {
                     errorDetails =
                         String.Format(
-                            "The update check server could not be resolved.\nPlease check your internet connection and try again.");
+                            "无法解析更新服务器。\n请检查您的网络连接。");
                     iconsToShow = MessageBoxIcon.Error;
                 }
                 else if (ex.Message.Contains("404"))
                 {
-                    errorDetails = "The update check server is currently down. Please try again later.";
+                    errorDetails = "更新服务器无法找到。请稍候再试。";
                     iconsToShow = MessageBoxIcon.Information;
                 }
-                MessageBox.Show(errorDetails, "Update check server down", MessageBoxButtons.OK, iconsToShow);
+                MessageBox.Show(errorDetails, "服务器不可用", MessageBoxButtons.OK, iconsToShow);
                 return null;
             }
 

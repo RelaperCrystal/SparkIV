@@ -344,8 +344,8 @@ namespace SparkIV
             // tslFilter
             // 
             this.tslFilter.Name = "tslFilter";
-            this.tslFilter.Size = new System.Drawing.Size(39, 53);
-            this.tslFilter.Text = "Fil&ter:";
+            this.tslFilter.Size = new System.Drawing.Size(47, 53);
+            this.tslFilter.Text = "搜索(&T)";
             // 
             // tstFilterBox
             // 

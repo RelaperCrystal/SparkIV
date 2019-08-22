@@ -118,7 +118,7 @@ namespace RageLib.Models
                 {
                     AddExtension = true,
                     OverwritePrompt = true,
-                    Title = "Export Model",
+                    Title = "导出模型",
                     Filter = Export.ExportFactory.GenerateFilterString(),
                     InitialDirectory = _workingDirectory,
                 };
